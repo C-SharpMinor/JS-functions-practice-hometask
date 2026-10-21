@@ -18,9 +18,9 @@
 function displayReminder (){
     console.log("Remember to practise JavaScript every day!")
 }
-displayReminder ();
-displayReminder ();
-displayReminder ();
+displayReminder();
+displayReminder();
+displayReminder();
 
 
 // 2. Use a Parameter
@@ -207,9 +207,9 @@ multiplyArrow(6,4)
 // Run your code.
 
 showMessage()
-const showMessage = ()=>{
-    console.log("Function declarations can be called before their definition.");
-    
+
+function showMessage(){
+    console.log("Function declarations can be called before their definition.");  
 }
 
 // Explain in a comment why the call works.
