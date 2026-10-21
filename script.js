@@ -58,12 +58,12 @@ describeProduct("School Bag", 1200)
 // Call it with undefined.
 
 function showCity (city="Lagos"){
-    console.log(`Your selected city is ${city}.`)
+    console.log(`Your selected city is ${city}.`);
 }
 
-showCity()
-showCity ("Abuja")
-showCity("PH", "shs")
+showCity();
+showCity ("Abuja");
+// showCity(jkj) - calling it with undefined
 
 // In a comment, explain when the default value is used.
 // the default value is used when no argument is used in the function parameter
@@ -81,7 +81,7 @@ function calculateSubtotal(price, quantity){
 }
 const subtotal= calculateSubtotal(2500, 4);
 console.log(subtotal);
-const finalTotal= subtotal + 1500
+const finalTotal= subtotal + 1500;
 console.log(finalTotal);
 
 
@@ -98,9 +98,9 @@ function checkPass (score){
     return "You passed!";
 }
 
-console.log(checkPass(35))
-console.log(checkPass(50))
-console.log(checkPass(80))
+console.log(checkPass(35));
+console.log(checkPass(50));
+console.log(checkPass(80));
 
 // 7. Return a Boolean
 // Create a function declaration named isPositive with a parameter named number.
@@ -114,9 +114,10 @@ function isPositive(number){
     return false;
 }
 
-isPositive(8)
-isPositive(-3)
-isPositive(0)
+console.log(isPositive(8));
+console.log(isPositive(-3));
+console.log(isPositive(0));
+ 
 
 // 8. Create a Function Expression
 // Create a function expression and assign it to a constant named displayStudyTip.
@@ -127,8 +128,8 @@ const displayStudyTip = function (){
     console.log("Practice a little every day.");
     
 }
-displayStudyTip()
-displayStudyTip()
+displayStudyTip();
+displayStudyTip();
 
 
 // 9. Calculate with a Function Expression
@@ -154,8 +155,9 @@ console.log(balance);
 
 const introduceLearner = (learnerName, courseName)=>{
     console.log(`${learnerName} is studying ${courseName}.`);
-    
 }
+
+introduceLearner("Bola", "JavaScript");
 
 // 11. Use an Implicit Return
 // Create an arrow function named squareNumber.
@@ -164,9 +166,10 @@ const introduceLearner = (learnerName, courseName)=>{
 // Do not use curly braces or the return keyword.
 // Display the results of calling it with 5 and 9.
 
-const squareNumber = (number)=> number * number
-squareNumber(5)
-squareNumber(9)
+const squareNumber = (number)=> number * number;
+console.log(squareNumber(5));
+console.log(squareNumber(9));
+
 
 // 12. Use an Explicit Return
 // Create an arrow function named calculateDiscount.
@@ -179,7 +182,7 @@ const calculateDiscount = (price, discountAmount)=>{
     return price - discountAmount;
 }
 
-const discountedPrice= calculateDiscount (8000, 1000)
+const discountedPrice= calculateDiscount (8000, 1000);
 console.log(discountedPrice);
 
 // 13. Practice All Three Function Styles
@@ -197,9 +200,10 @@ const multiplyExpression = function (no1, no2){
 }
 const multiplyArrow = (no1, no2)=> no1 * no2;
 
-multiplyDeclaration(6,4)
-multiplyExpression(6,4)
-multiplyArrow(6,4)
+console.log(multiplyDeclaration(6,4));
+console.log(multiplyExpression(6,4));
+console.log(multiplyArrow(6,4));
+
 
 // 14. Explore Hoisting
 // Write a call to showMessage() above its function declaration.
@@ -236,6 +240,10 @@ function returnDouble(number){
 
 const firstResult= displayDouble(5);
 const secondResult= returnDouble(5);
+
+
+console.log(firstResult);
+console.log(secondResult);
 
 //firstResult shows undefined because it does not return a value to be displayed. The function was instructed to display some result
 //while for secondResult, it does return a value. So the value could be stored in a variable and then displayed
