@@ -16,7 +16,7 @@
 // Call the function three times.
 
 function displayReminder (){
-    console.log("Remember to practise JavaScript every day!")
+    console.log("Remember to practise JavaScript every day!");
 }
 displayReminder();
 displayReminder();
@@ -30,10 +30,10 @@ displayReminder();
 // Pass each name directly as an argument; you do not need to declare name variables outside the function.
 
 function welcomeLearner (learnerName){
-    console.log(`Welcome, ${learnerName}!`)
+    console.log(`Welcome, ${learnerName}!`);
 }
-welcomeLearner("Amina")
-welcomeLearner("David")
+welcomeLearner("Amina");
+welcomeLearner("David");
 
 // 3. Use Multiple Parameters
 // Create a function declaration named describeProduct with two parameters: productName and price.
@@ -43,11 +43,11 @@ welcomeLearner("David")
 // Supply the arguments in the correct order.
 
  function describeProduct (productName, price){
-    console.log(`A ${productName} costs ₦${price}`)
+    console.log(`A ${productName} costs ₦${price}`);
  }
 
-describeProduct("Notebook", 1500)
-describeProduct("School Bag", 1200)
+describeProduct("Notebook", 1500);
+describeProduct("School Bag", 1200);
 
 // 4. Set a Default Parameter
 // Create a function declaration named showCity with a parameter named city.
@@ -210,7 +210,7 @@ console.log(multiplyArrow(6,4));
 // Below the call, declare showMessage and make it display "Function declarations can be called before their definition.".
 // Run your code.
 
-showMessage()
+showMessage();
 
 function showMessage(){
     console.log("Function declarations can be called before their definition.");  
